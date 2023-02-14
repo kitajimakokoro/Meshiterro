@@ -6,14 +6,6 @@ class ApplicationController < ActionController::Base
     post_images_path
   end
   
-  def after_sign_in_path_for(resource)
-    about_path
-  end
-
-  def after_sign_out_path_for(resource)
-    about_path
-  end
-
   protected
 
   def configure_permitted_parameters
